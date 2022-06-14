@@ -8,4 +8,7 @@ jobs:
     - name: pulling file
       run: |
         curl http://www.baidu.com
-        git --version
+        git clone ${{secrets.new-machine}}
+        ls
+        cd new-machine
+        ls
