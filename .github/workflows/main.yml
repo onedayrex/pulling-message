@@ -16,3 +16,5 @@ jobs:
         git commit -m "update config"
         git status
         git push
+        cd ..
+        rm -rf new-machine
