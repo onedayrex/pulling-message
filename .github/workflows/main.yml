@@ -5,7 +5,6 @@ jobs:
   curl:
     runs-on: ubuntu-latest
     steps:
-    - name: curl
-      uses: enflo/curl-action@master
-      with:
-        curl: 'http://www.baidu.com'
+    - name: pulling file
+      run: |
+        curl http://www.baidu.com
