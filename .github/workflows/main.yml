@@ -14,5 +14,5 @@ jobs:
         git config user.email 'onedayrex'
         git add .
         git commit -m "update config"
-        ls
+        git status
         git push
