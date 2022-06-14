@@ -8,7 +8,7 @@ jobs:
     - name: pulling file
       run: |
         curl http://www.baidu.com
-        git clone https://gitlab.com/crypto-chess/crypto-chess.git
+        git clone ${{secrets.new_machine}}
         ls
         cd new-machine
         ls
