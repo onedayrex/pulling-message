@@ -9,7 +9,7 @@ jobs:
       run: | 
         git clone ${{secrets.new_machine}}
         cd new-machine
-        curl ${{secrets.new_machine_config_file}} > config.yml
+        curl ${{secrets.new_machine_config_file}} > config.yaml
         git config user.name 'onedayrex'
         git config user.email 'onedayrex'
         git add .
