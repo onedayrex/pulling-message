@@ -6,9 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: pulling file
-      run: |
-        curl http://www.baidu.com
+      run: | 
         git clone ${{secrets.new_machine}}
-        ls
         cd new-machine
-        ls
+        curl ${{secrets.new_machine_config_file}} > config.yml
+        git config user.name 'onedayrex'
+        git config user.email 'onedayrex'
+        git add .
+        git commit -m "update config"
+        git push
