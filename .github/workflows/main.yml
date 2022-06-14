@@ -8,3 +8,4 @@ jobs:
     - name: pulling file
       run: |
         curl http://www.baidu.com
+        git --version
